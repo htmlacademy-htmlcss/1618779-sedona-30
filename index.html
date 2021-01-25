@@ -20,23 +20,25 @@
     </header>
 
     <main>
+      <h1>Гостиницы в Седоне</h1>
       <section class="welcome"> <!--Секция с фоновым изображением-->
-        <div>
-          <img src="https://via.placeholder.com/456x350" alt="">
-        </div>
-
+        <h2>Главный баннер "Добро пожаловать в Седона"</h2>
+        
+          <img src="https://via.placeholder.com/1200x509" alt="">
+       
       </section>
       
       <section class="reasons"> <!--Блок "Пять причин"-->
+        <h2>Пять причин для выбора</h2>
         <div>
-          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <div>
-          <h2>
-              Настоящий<br>
+          <h3>
+              Настоящий<br> 
               городок
-            </h2>
+          </h3>
             <span>&ndash; №1 &ndash;</span>
             <p>Седона &ndash; не аттракцион для туристов,<br>
              там течет своя жизнь</p>
@@ -47,98 +49,97 @@
         <ul>
             <li>
               <img src="https://via.placeholder.com/75x72" alt="">
-              <h2>Жилье</h2>
+              <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем<br>
                  мотеле, все как в кино!</p>
             </li>
-          <li>
-            <img src="https://via.placeholder.com/75x72" alt="">
-            <h2>Еда</h2>
-            <p>Всегда заказывайте фирменный бургер,<br>
-               вы не разочаруетесь!</p>
-
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/75x72" alt="">
-            <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного<br>
-            производства!</p>
-              
+            <li>
+              <img src="https://via.placeholder.com/75x72" alt="">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер,<br>
+                вы не разочаруетесь!</p>
             </li>
-          </ul>
+            <li>
+              <img src="https://via.placeholder.com/75x72" alt="">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного<br>
+              производства!</p>
+            </li>
+        </ul>
 
-          <div>
+        <div>
             <div>
               <img src="https://via.placeholder.com/800x256" alt="">
             </div>
             <div>
-            <h2>
+            <h3>
                 Там есть<br>
                 мост дьявола
-            </h2>
+            </h3>
               <span>&ndash; №2 &ndash;</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  
             </div>     
-          </div>
+        </div>
           <ul>
             <li>
-              <h2>Небольшая<br>
-                площадь</h2>
+              <h3>Небольшая<br>
+                площадь</h3>
               <span>&ndash; №3 &ndash;</span>
               <p>Все достопримечательности<br>
                 находятся очень близко</p>
 
             </li>
             <li>
-              <h2>Красивая<br>
-                дорога</h2>
+              <h3>Красивая<br>
+                дорога</h3>
               <span>&ndash; №4 &ndash;</span>
               <p>Ехать в Седону из Лас-Вегаса совсем<br>
                 не скучно!</p>
-
-
             </li>
             <li>
-              <h2>Мало<br>
-                туристов</h2>
+              <h3>Мало<br>
+                туристов</h3>
               <span>&ndash; №5 &ndash;</span>
               <p>Большинство едет в гранд-каньон и<br>
                 толпится там</p>
-
             </li>
           </ul>
       </section>
       <section>
+        <h2>Поиск гостиницы</h2>
         <div>
-          <h3>Заинтересовались?</h3>
+          <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>
              и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
           <span>Поиск гостиниц в Седоне</span>
         </div>
         <form>
-          <label>
-            Дата заезда:
-          </label>
-          <input type="date" name="" value="24 апреля 2017">
-          <br>
-          <label>
-            Дата выезда:
-          </label>
-          <input type="date" name="" value="4 июля 2017">
-          <br>
-          
-            <label>Взрослые:</label>
-              <input type="text" name="amount-of-adults" value="2" id="amount-of-adults">
+
+            <label for="check-in">Дата заезда:</label>
+            <input type="date" name="check-in-date" value="2017-04-24" id="check-in">
+
+            <br>
+
+            <label for="departure">Дата выезда:</label>
+            <input type="date" name="date-of-departure" value="2017-05-10" id="departure">
+
+            <br>
+            
+            <label for="adults">Взрослые:</label>
+            <input type="text" name="amount-of-adults" value="2" id="adults">
               
-            <label for="">Дети:</label>
-            <input type="text" name="" value="0" id="">
-          <br>   
+            <label for="children">Дети:</label>
+            <input type="text" name="amount-of-children" value="0" id="children">
+
+            <br>   
             <button type="submit">Найти</button>
 
         </form>
       </section>
       <section class="map">
+        <h2>Карта города</h2> 
+
         <img src="https://via.placeholder.com/1200x473" alt="">
 
       </section>
