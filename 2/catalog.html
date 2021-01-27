@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Каталог гостиниц: Седона</title>
+        <base href="https://htmlacademy-htmlcss.github.io/1618779-sedona-30/2/">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="/">
+            <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Логотип «Sedona»">
+          </a>
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+          <h1>Каталог гостиниц в Седоне</h1>
+          <section class="filter">
+              <h2>Фильтр для поиска гостиниц</h2>
+              <form oninput="price.value=inprice.value">
+                Инфраструктура
+                <ul>
+                    <li><input type="checkbox" checked>
+                        <label>Бассейн</label>
+                    </li>
+                    <li><input type="checkbox">
+                        <label>Парковка</label>
+                    </li>
+                    <li><input type="checkbox">
+                        <label>Wi-Fi</label>
+                    </li>
+                </ul>
+                Тип жилья:
+                <ul>
+                    <li><input type="checkbox" checked>
+                        <label>Гостиница</label>
+                    </li>
+                    <li><input type="checkbox" checked>
+                        <label>Мотель</label>
+                    </li>
+                    <li><input type="checkbox" checked>
+                        <label>Апартаменты</label>
+                    </li>
+                </ul>
+
+                    <label>Стоимость в сутки:</label><br>
+                    От: 0
+                    <input type="range" min="0" max="5000" name="inprice" step="100">
+                    До
+                    <output name="price"></output>
+                    <br>
+               
+                <input type="submit" value="Показать">
+
+              </form>
+          </section>
+
+          <section class="results">
+              <h2> Результаты поиска гостиниц</h2>
+              <div>
+                  <span>Найдено: 3</span>  
+                  <span>Сортировка:</span>
+                  <ul>
+                      <li>По цене</li>
+                      <li>По типу</li>
+                      <li>По рейтингу</li>
+                  </ul>
+              </div>
+              <div>
+                <h3>Amara Resort & Spa</h3>
+                  <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
+                  <br>
+                  <span>Гостиница</span> <br>
+                  <span>от: 4000 р.</span> <br>
+                  <button>Подробнее</button> 
+                  <button>Забронировать</button>
+                  <span>Рейтинг: xxx</span>    
+              </div>
+              <div>
+                <h3>Desert Quail Inn</h3>
+                <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
+                <br>
+                  <span>Мотель</span> <br>
+                  <span>от: 3000 р.</span> <br>
+                  <button>Подробнее</button> 
+                  <button>Забронировать</button>
+                  <span>Рейтинг: xxx</span>
+            </div>
+            <div>
+                <h3>Villas at Poco Diablo</h3>
+                <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
+                <br>
+                  <span>Апартаменты</span> <br>
+                  <span>от: 2000 р.</span> <br>
+                  <button>Подробнее</button> 
+                  <button>Забронировать</button>
+                  <span>Рейтинг: xxx</span>
+            </div>
+           </section>
+
+      </main>
+
+      <footer>
+        <div>
+          <span>#visitsedona</span> 
+          <p>Тел: +7(495) 666-01-66</p>
+        </div>
+        <div class="social">
+          <a href="#"><img src="https://via.placeholder.com/46x46" alt=""></a>
+          <a href="#"><img src="https://via.placeholder.com/46x46" alt=""></a>
+          <a href="#"><img src="https://via.placeholder.com/46x46" alt=""></a>
+        </div>
+        <div>
+          <a href="https://htmlacademy.ru/">
+            <span>Website by</span>
+            <img src="https://via.placeholder.com/115x40" alt="">
+          </a>
+        </div>
+    
+    
+       </footer>
+    
+</body>
+</html>
