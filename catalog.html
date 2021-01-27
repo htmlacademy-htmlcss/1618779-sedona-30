@@ -25,32 +25,32 @@
               <form oninput="price.value=inprice.value">
                 Инфраструктура
                 <ul>
-                    <li><input type="checkbox" checked>
-                        <label>Бассейн</label>
+                    <li>
+                        <label><input type="checkbox" checked>Бассейн</label>
                     </li>
-                    <li><input type="checkbox">
-                        <label>Парковка</label>
+                    <li>
+                        <label><input type="checkbox">Парковка</label>
                     </li>
-                    <li><input type="checkbox">
-                        <label>Wi-Fi</label>
+                    <li>
+                        <label><input type="checkbox">Wi-Fi</label>
                     </li>
                 </ul>
                 Тип жилья:
                 <ul>
-                    <li><input type="checkbox" checked>
-                        <label>Гостиница</label>
+                    <li>
+                        <label><input type="checkbox" checked>Гостиница</label>
                     </li>
-                    <li><input type="checkbox" checked>
-                        <label>Мотель</label>
+                    <li>
+                        <label><input type="checkbox" checked>Мотель</label>
                     </li>
-                    <li><input type="checkbox" checked>
-                        <label>Апартаменты</label>
+                    <li>
+                        <label><input type="checkbox" checked>Апартаменты</label>
                     </li>
                 </ul>
 
-                    <label>Стоимость в сутки:</label><br>
+                    <label for="cost-per-day">Стоимость в сутки:</label><br>
                     От: 0
-                    <input type="range" min="0" max="5000" name="inprice" step="100">
+                    <input type="range" min="0" max="5000" name="inprice" step="100" id="cost-per-day">
                     До
                     <output name="price"></output>
                     <br>
@@ -62,6 +62,7 @@
 
           <section class="results">
               <h2> Результаты поиска гостиниц</h2>
+             
               <div>
                   <span>Найдено: 3</span>  
                   <span>Сортировка:</span>
@@ -71,36 +72,71 @@
                       <li>По рейтингу</li>
                   </ul>
               </div>
-              <div>
-                <h3>Amara Resort & Spa</h3>
-                  <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
-                  <br>
-                  <span>Гостиница</span> <br>
-                  <span>от: 4000 р.</span> <br>
-                  <button>Подробнее</button> 
-                  <button>Забронировать</button>
-                  <span>Рейтинг: xxx</span>    
-              </div>
-              <div>
-                <h3>Desert Quail Inn</h3>
-                <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
-                <br>
-                  <span>Мотель</span> <br>
-                  <span>от: 3000 р.</span> <br>
-                  <button>Подробнее</button> 
-                  <button>Забронировать</button>
-                  <span>Рейтинг: xxx</span>
-            </div>
-            <div>
-                <h3>Villas at Poco Diablo</h3>
-                <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
-                <br>
-                  <span>Апартаменты</span> <br>
-                  <span>от: 2000 р.</span> <br>
-                  <button>Подробнее</button> 
-                  <button>Забронировать</button>
-                  <span>Рейтинг: xxx</span>
-            </div>
+              <ul>
+                <li>
+                    <div>
+                        <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
+
+                        <div>
+                            <h3>Amara Resort & Spa</h3>
+                            <p>Гостиница</p> 
+                            <p>от: 4000 р.</p>
+                            <a href="#">Подробнее</a> 
+                            <button>Забронировать</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>*</li>
+                            <li>*</li>
+                            <li>*</li>
+                            <li>*</li>
+                        </ul>
+                        <p>Рейтинг: 8.5</p> 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
+
+                        <div>
+                            <h3>Desert Quail Inn</h3>
+                            <p>Мотель</p> 
+                            <p>от: 3000 р.</p>
+                            <a href="#">Подробнее</a> 
+                            <button>Забронировать</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>*</li>
+                            <li>*</li>
+                            <li>*</li>
+                        </ul>
+                        <p>Рейтинг: 8.9</p> 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://via.placeholder.com/135x90" alt="" width="135" height="90">
+
+                        <div>
+                            <h3>Villas at Poco Diablo</h3>
+                            <p>Апартаменты</p> 
+                            <p>от: 2000 р.</p>
+                            <a href="#">Подробнее</a> 
+                            <button>Забронировать</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>*</li>
+                            <li>*</li>
+                        </ul>
+                        <p>Рейтинг: 9.2</p> 
+                    </div>
+                </li>
+              </ul>
            </section>
 
       </main>
